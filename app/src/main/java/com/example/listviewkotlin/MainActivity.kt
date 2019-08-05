@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        listView = findViewById(R.id.listView)
+        var listView = findViewById<ListView>(R.id.listView)
 
         val heroes = arrayOf("Ironman", "Thor", "Spiderman", "Batman")
 
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         listView.setOnItemClickListener { adpterView, view, i, l ->
 
-            Toast.makeText(applicationContext, "You clicked" + heroes[i], Toast.LENGTH_SHORT)
+            Toast.makeText(applicationContext, "You clicked " + heroes[i], Toast.LENGTH_SHORT).show()
         }
 
     }
