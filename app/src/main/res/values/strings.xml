@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListViewKotlin</string>
+
+    <array name="ListEntries">
+        <item>Michelle Sinibaldi</item>
+        <item>Simplified Coding </item>
+        <item>Maria da Silva</item>
+
+    </array>
+
+</resources>
